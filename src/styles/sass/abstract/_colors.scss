@@ -1,0 +1,46 @@
+// Main theme colors
+
+$dark-blue: hsl(213, 100%, 12%);
+$grey-blue: hsl(202, 60%, 27%);
+
+$main-theme-color-dark: $dark-blue;
+$main-theme-color-light: $grey-blue;
+
+
+// Additional colors (pastels) for styling
+
+$blue: hsl(201, 100%, 75%);
+$pink: hsl(339, 100%, 75%);
+$yellow: hsl(68, 100%, 75%);
+$white: hsl(0, 0%, 100%);
+
+$main-blue-color: $blue;
+$main-pink-color: $pink;
+$main-yellow-color: $yellow;
+$main-white-color: $white;
+
+
+// Colors for styled text
+
+$purple: hsl(273, 100%, 75%);
+$orange: hsl(21, 100%, 75%);
+$green: hsl(130, 100%, 75%);
+
+$blue-text: $blue;
+$pink-text: $pink;
+$yellow-text: $yellow;
+$white-text: $white;
+$purple-text: $purple;
+$orange-text: $orange;
+$green-text: $green;
+
+
+// Colors with transparency (alpha)
+
+$main-blue-transparent: hsla(201, 100%, 75%, 0.5);
+$main-pink-transparent: hsla(339, 100%, 75%, 0.5);
+$main-yellow-transparent: hsla(68, 100%, 75%, 0.5);
+$main-white-transparent: hsla(0, 0%, 100%, 0.5);
+
+$main-theme-color-dark-transparent: hsla(213, 100%, 12%, 0.9);
+$main-theme-color-light-transparent: hsla(202, 60%, 27%, 0.9);

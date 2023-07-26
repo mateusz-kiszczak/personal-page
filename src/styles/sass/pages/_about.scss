@@ -1,0 +1,5 @@
+@use '../abstract/colors';
+
+.about .main-header__wrapper {
+  background-image: linear-gradient(to bottom, colors.$main-theme-color-light-transparent, colors.$main-theme-color-dark-transparent), url('../../img/backgrounds/about_bg.jpg');
+}

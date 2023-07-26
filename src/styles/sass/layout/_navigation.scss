@@ -1,0 +1,104 @@
+@use '../abstract/colors';
+ 
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 32px 0;
+}
+
+.main-nav a {
+ text-decoration: none;
+}
+
+.main-nav__list {
+  display: flex;
+}
+
+.main-nav__list li {
+  margin-left: 32px;
+}
+
+.main-nav__list a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__list p {
+  text-transform: uppercase;
+}
+
+
+// Active and inactive links
+
+.active-link--home > div,
+.active-link--projects > div,
+.active-link--about > div,
+.in-active-link--home > div,
+.in-active-link--projects > div,
+.in-active-link--about > div {
+  width: 32px;
+  height: 32px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.active-link--home > div {
+  background-image: url('../../img/icons/navigation/home_icon_active.svg');
+}
+
+.active-link--projects > div {
+  background-image: url('../../img/icons/navigation/projects_icon_active.svg');
+}
+
+.active-link--about > div {
+  background-image: url('../../img/icons/navigation/about_icon_active.svg');
+}
+
+.in-active-link--home > div {
+  background-image: url('../../img/icons/navigation/home_icon.svg');
+}
+
+.in-active-link--projects > div {
+  background-image: url('../../img/icons/navigation/projects_icon.svg');
+}
+
+.in-active-link--about > div {
+  background-image: url('../../img/icons/navigation/about_icon.svg');
+}
+
+.active-link--home > p {
+  color: colors.$blue-text;
+}
+
+.active-link--projects > p {
+  color: colors.$pink-text;
+}
+
+.active-link--about > p {
+  color: colors.$yellow-text;
+}
+
+
+.in-active-link--home > p,
+.in-active-link--projects > p,
+.in-active-link--about > p {
+  color: colors.$white-text;
+  transition: color 150ms;
+}
+
+.in-active-link--home:hover > p {
+  color: colors.$blue-text;
+}
+
+.in-active-link--projects:hover > p {
+  color: colors.$pink-text;
+}
+
+.in-active-link--about:hover > p {
+  color: colors.$yellow-text;
+}

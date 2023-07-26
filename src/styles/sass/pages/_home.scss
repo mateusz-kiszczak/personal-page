@@ -1,0 +1,138 @@
+@use '../abstract/colors';
+@use '../abstract/variables';
+@use '../utilities/container';
+
+.home .main-header__wrapper {
+  background-image: linear-gradient(to bottom, colors.$main-theme-color-light-transparent, colors.$main-theme-color-dark-transparent), url('../../img/backgrounds/home_bg.jpg');
+}
+
+
+// MY EXPERIENCE
+.home__my-experience {
+  padding: 64px 0;
+}
+
+.my-experience__content {
+  border: variables.$default-border;
+  margin-bottom: 32px;
+  padding: 48px 128px 48px 96px;
+  transition: background-color 300ms;
+}
+
+.my-experience__content:hover {
+  background-color: colors.$main-theme-color-light;
+  transition: background-color 150ms;
+}
+
+.my-experience__top {
+  display: grid;
+  grid-template-columns: 75px auto;
+  grid-template-rows: 75px auto;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.my-experience__top > img {
+  width: 100%;
+}
+
+.my-experience__top > h3 {
+  align-self: center;
+}
+
+.my-experience__top__underline--pink {
+  text-decoration: underline;
+  text-decoration-color: colors.$main-pink-color;
+  text-decoration-thickness: 6px;
+}
+
+.my-experience__top__underline--yellow {
+  text-decoration: underline;
+  text-decoration-color: colors.$main-yellow-color;
+  text-decoration-thickness: 6px;
+}
+
+.my-experience__top__underline--blue {
+  text-decoration: underline;
+  text-decoration-color: colors.$main-blue-color;
+  text-decoration-thickness: 6px;
+}
+
+.my-experience__bottom__tag {
+  color: colors.$main-white-transparent;
+}
+
+.my-experience__bottom__description {
+  border-left: 1px solid colors.$main-white-transparent;
+  margin: 8px 0 8px 18px;
+  padding: 16px 0 16px 24px;
+}
+
+
+// HIGHLIGH PROJECTS
+
+.home__highlight-projects {
+  background-color: colors.$main-theme-color-light;
+  padding: 64px 0;
+}
+
+.highlight-projects__content {
+  border: variables.$default-border;
+  margin-bottom: 64px;
+  padding: 48px 96px;
+  transition: background-color 300ms;
+}
+
+.highlight-projects__content:nth-last-of-type(3n - 1) {
+  box-shadow: variables.$box-shadow-blue;
+}
+
+.highlight-projects__content:nth-last-of-type(3n + 1) {
+  box-shadow: variables.$box-shadow-pink;
+}
+
+.highlight-projects__content:nth-last-of-type(3n) {
+  box-shadow: variables.$box-shadow-yellow;
+}
+
+.highlight-projects__content:last-of-type {
+  margin-bottom: 48px;
+}
+
+.highlight-projects__content:hover {
+  background-color: colors.$main-theme-color-dark;
+  transition: background-color 150ms;
+}
+
+.highlight-projects__content > h3 {
+  margin-bottom: 32px;
+}
+
+.highlight-projects__content > h3 > a {
+  font-size: 32px;
+}
+
+.highlight-projects__content > p {
+  margin-bottom: 24px;
+}
+
+.highlight-projects__screen-shot {
+  margin-bottom: 24px;
+  border: variables.$default-border;
+  border-radius: 5px
+}
+
+.highlight-projects__links {
+  display: flex;
+}
+
+.highlight-projects__links > div {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+}
+
+.highlight-projects__links > div > img {
+  height: 50px;
+  margin-right: 16px;
+}

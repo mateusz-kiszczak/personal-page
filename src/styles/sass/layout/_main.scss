@@ -1,0 +1,7 @@
+@use '../abstract/colors';
+
+.main-content__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: colors.$main-theme-color-dark;
+}

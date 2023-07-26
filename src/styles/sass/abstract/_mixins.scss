@@ -1,0 +1,8 @@
+// ANIMATIONS
+
+@mixin default-animation($name, $duration: 1000ms, $delay: 0s, $iteration: 1, $direction: normal, $fill: forwards) {
+  -o-animation: $name $duration $delay $iteration $direction $fill;
+  -moz-animation: $name $duration $delay $iteration $direction $fill;
+  -webkit-animation: $name $duration $delay $iteration $direction $fill;
+  animation: $name $duration $delay $iteration $direction $fill;
+}

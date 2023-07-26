@@ -1,0 +1,29 @@
+.footer {
+  padding: 64px 0;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.footer__links > a {
+  text-decoration: none;
+}
+
+.footer__links__external-links {
+  display: flex;
+}
+
+.footer__links__external-links > div {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+}
+
+.footer__links__external-links > div > img {
+  height: 50px;
+  margin-right: 16px;
+}
