@@ -5,10 +5,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 32px 0;
+  padding: 1.33rem 0;
 }
 
-.main-nav a {
+.main-nav a,
+.main-nav-small__bar a {
  text-decoration: none;
 }
 
@@ -17,7 +18,7 @@
 }
 
 .main-nav__list li {
-  margin-left: 32px;
+  margin-left: 1.33rem;
 }
 
 .main-nav__list a {
@@ -40,8 +41,8 @@
 .in-active-link--home > div,
 .in-active-link--projects > div,
 .in-active-link--about > div {
-  width: 32px;
-  height: 32px;
+  width: 1.33rem;
+  height: 1.33rem;
 
   background-repeat: no-repeat;
   background-size: contain;
@@ -101,4 +102,101 @@
 
 .in-active-link--about:hover > p {
   color: colors.$yellow-text;
+}
+
+
+// NAVIGATION SMALL DEVICES
+
+// Navigation Bar
+
+.main-nav-small__bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.33rem 0;
+  transition: all 400ms;
+}
+
+.main-nav-small__bar > a {
+  font-size: clamp(18px, 4vw, 24px);
+}
+
+.main-nav-small__bar__button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid colors.$main-white-transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 1px colors.$main-white-color;
+  margin-right: 1.33rem;
+  overflow: hidden;
+}
+
+.main-nav-small__bar__button:hover {
+  background-color: colors.$main-theme-color-light;
+}
+
+.main-nav-small__bar__button__icons-wrapper {
+  transition: translate 400ms;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav-small__bar__button__icons-wrapper > img {
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+}
+
+.navigation-opened {
+  translate: -50px;
+}
+
+.navigation-opened--bar-bg {
+  background-color: colors.$main-theme-color-light;
+  box-shadow: 0 -25px 0 25px colors.$main-theme-color-light-transparent;
+}
+
+
+// Navigation Links
+
+.main-nav-small__links {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  bottom: 0;
+  translate: 100%;
+  transition: translate 400ms;
+  background-color: colors.$main-theme-color-dark;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1.33rem;
+}
+
+.main-nav-small__links__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav-small__links__list > li {
+  margin-bottom: 2rem;
+}
+
+.main-nav-small__links__list > li > a {
+  display: flex;
+  font-size: clamp(24px, 6vw, 32px);
+  text-transform: uppercase;
+  text-decoration: none;
+  align-items: center;
+  font-weight: bold;
+}
+
+.main-nav-small__links__list > li > a > div {
+  width: 42px;
+  height: 42px;
+  margin-right: 2rem;
+}
+
+.navigation-opened--links {
+  translate: 0;
 }

@@ -5,9 +5,9 @@ const MyExperience = () => {
   return (
     <section className="home__my-experience default-container-width">
       <h2>My Experience</h2>
-      {myExperience.map(item => {
+      {myExperience.map((item, index) => {
         return (
-          <section className="my-experience__content">
+          <section className="my-experience__content" key={`my-experience-${index}`}>
             <div className="my-experience__top">
               <img src={item.icon} alt="" />
               <h3 className={`my-experience__top__underline--${item.color}`}>{item.title}</h3>

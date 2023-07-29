@@ -1,16 +1,18 @@
 .footer {
-  padding: 64px 0;
+  padding: 2.66rem 0;
 }
 
 .footer__links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
 }
 
 .footer__links > a {
   text-decoration: none;
+  margin-bottom: 1.33rem;
+  margin-right: 1.33rem;
 }
 
 .footer__links__external-links {
@@ -20,10 +22,11 @@
 .footer__links__external-links > div {
   display: flex;
   align-items: center;
-  margin-right: 32px;
+  margin-right: 1.33rem;
+  margin-bottom: 1.33rem;
 }
 
 .footer__links__external-links > div > img {
-  height: 50px;
-  margin-right: 16px;
+  height: 2rem;
+  margin-right: 0.66rem;
 }

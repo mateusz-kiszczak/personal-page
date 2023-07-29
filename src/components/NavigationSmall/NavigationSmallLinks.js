@@ -1,15 +1,14 @@
-import { Link, NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
 
-const Navigation = () => {
+const NavigationSmallLinks = () => {
+  const smallNavBarHeight = useSelector((state) => state.smallNavBarHeight.value);
+  const screenHeight = useSelector((state) => state.screenHeight.value);
+  const isNavigationOpen = useSelector((state) => state.isNavigationOpen.value);
+
   return (
-    <nav className="main-nav">
-      <Link to="/">
-        <span className="blue-text">Mat</span>
-        <span className="pink-text">Personal</span>
-        <span className="yellow-text">Page</span>
-        .com
-      </Link>
-      <ul className="main-nav__list">
+    <nav className={`main-nav-small__links ${isNavigationOpen ? "navigation-opened--links" : ""}`} style={{height: (screenHeight - smallNavBarHeight)}}>
+      <ul className="main-nav-small__links__list">
         <li>
           <NavLink to="/" className={({isActive}) => (isActive ? "active-link--home" : "in-active-link--home")}>
             <div></div>
@@ -31,6 +30,6 @@ const Navigation = () => {
       </ul>
     </nav>
   );
-}
+};
 
-export default Navigation;
+export default NavigationSmallLinks

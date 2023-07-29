@@ -14,6 +14,11 @@ $default-border: 4px solid colors.$main-white-transparent;
 
 // BOX SHADOW
 
-$box-shadow-pink: 16px 16px colors.$main-pink-color;
-$box-shadow-yellow: 16px 16px colors.$main-yellow-color;
-$box-shadow-blue: 16px 16px colors.$main-blue-color;
+$box-shadow-pink: 0.66rem 0.66rem colors.$main-pink-color;
+$box-shadow-yellow: 0.66rem 0.66rem colors.$main-yellow-color;
+$box-shadow-blue: 0.66rem 0.66rem colors.$main-blue-color;
+
+// Small devices (mobile)
+$box-shadow-pink--sm: 0.5rem 0.5rem colors.$main-pink-color;
+$box-shadow-yellow--sm: 0.5rem 0.5rem colors.$main-yellow-color;
+$box-shadow-blue--sm: 0.5rem 0.5rem colors.$main-blue-color;

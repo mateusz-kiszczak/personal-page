@@ -9,9 +9,9 @@ const HighlightProjects = () => {
   return (
     <section className="home__highlight-projects default-container-width">
       <h2>Highlight Projects</h2>
-      {highlightProjects.map(item => {
+      {highlightProjects.map((item, index) => {
         return (
-          <section className="highlight-projects__content">
+          <section className="highlight-projects__content" key={`highlight-project-${index}`}>
               <h3><Link to="/projects">{item.title}</Link></h3>
               <p className="mono-string">{item.tags.map(tag => `#${tag} `)}</p>
             <div className="highlight-projects__screen-shot">

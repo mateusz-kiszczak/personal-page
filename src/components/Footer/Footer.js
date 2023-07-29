@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p>©2023 Mateusz Kiszczak, All Rights Reserved.</p>
+      <small>©2023 Mateusz Kiszczak, All Rights Reserved.</small>
     </footer>
   );
 }

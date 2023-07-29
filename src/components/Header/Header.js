@@ -1,9 +1,11 @@
-import Navigation from "../Navigation/Navigation";
-import CodeString from "../CodeString/CodeString";
-import GoDownButton from "../GoDownButton/GoDownButton";
-
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+
+import Navigation from "../Navigation/Navigation";
+import NavigationSmallBar from "../NavigationSmall/NavigationSmallBar";
+import NavigationSmallLinks from "../NavigationSmall/NavigationSmallLinks";
+import CodeString from "../CodeString/CodeString";
+import GoDownButton from "../GoDownButton/GoDownButton";
 
 import leftFillNum from "../../utilities/leftFillNumber";
 
@@ -32,11 +34,16 @@ const Header = (props) => {
   }, [time]);
 
 
+  // Get client device width.
+  const screenWidth = useSelector((state) => state.screenWidth.value);
+ 
+  
   return (
-    <div className="main-header__wrapper">
+    <div className="main-header__wrapper" style={{overflow: `${screenWidth <= 480 ? "hidden" : "visible"}`}}>
+      {(screenWidth <= 480) && <NavigationSmallLinks />}
       <header className="main-header">
         <div className="main-header__container default-container-width">
-          <Navigation/>
+          {screenWidth <= 480 ? <NavigationSmallBar /> : <Navigation/>}
           <div className="main-header__middle">
             <div className="main-header__middle__heading">
               <h1>{props.title}</h1>

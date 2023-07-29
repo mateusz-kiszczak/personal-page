@@ -1,5 +1,7 @@
 @use '../abstract/colors';
 
-.projects .main-header__wrapper {
+
+.projects .main-header__wrapper,
+.projects .main-nav-small__links {
   background-image: linear-gradient(to bottom, colors.$main-theme-color-light-transparent, colors.$main-theme-color-dark-transparent), url('../../img/backgrounds/projects_bg.jpg');
 }

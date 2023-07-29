@@ -59,25 +59,36 @@
 * {
   font-family: variables.$main-sans-serif;
   color: colors.$main-white-color;
-  font-size: 24px;
 }
 
+html {
+  font-size: clamp(16px, 2vw, 24px);
+}
 
 // Text elements
 
 h1 {
-  font-size: 96px;
+  font-size: 4rem;
   line-height: normal;
   text-transform: uppercase;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 3rem;
+  }
 }
 
 h2 {
-  font-size: 48px;
-  margin-bottom: 64px;
+  font-size: 2rem;
+  margin-bottom: 2.66rem;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 1.33rem;
+}
+
+small {
+  font-size: 0.66rem;
 }
 
 .code-string > * {
