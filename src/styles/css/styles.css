@@ -219,34 +219,50 @@ small {
 @-webkit-keyframes fade-in-from-left {
   from {
     opacity: 0;
+    -webkit-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
     transform: translateX(-10%);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0);
   }
 }
 @keyframes fade-in-from-left {
   from {
     opacity: 0;
+    -webkit-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
     transform: translateX(-10%);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0);
   }
 }
 @keyframes moving-button {
   0% {
+    -webkit-transform: translate(-50%, -1.58rem);
+    -ms-transform: translate(-50%, -1.58rem);
     transform: translate(-50%, -1.58rem);
   }
   94% {
+    -webkit-transform: translate(-50%, -1.58rem);
+    -ms-transform: translate(-50%, -1.58rem);
     transform: translate(-50%, -1.58rem);
   }
   97% {
-    transform: translate(-50%, -1.08px);
+    -webkit-transform: translate(-50%, -0.5rem);
+    -ms-transform: translate(-50%, -0.5rem);
+    transform: translate(-50%, -0.5rem);
   }
   100% {
+    -webkit-transform: translate(-50%, -1.58rem);
+    -ms-transform: translate(-50%, -1.58rem);
     transform: translate(-50%, -1.58rem);
   }
 }
@@ -256,11 +272,11 @@ small {
 }
 
 .main-header__wrapper {
-  width: 100%;
-  height: 100vh;
-  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 
 .main-header {
@@ -272,17 +288,17 @@ small {
 }
 
 .main-header__container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100vh;
 }
 
 .main-header__middle__heading {
   border: 0.42rem solid hsl(0deg, 0%, 100%);
-  padding: 1.75rem 2rem;
   box-shadow: inset 0 0 0 1000px hsla(202deg, 60%, 27%, 0.9);
   overflow: hidden;
+  padding: 1.75rem 2rem;
 }
 
 .main-header__middle__heading > h1 {
@@ -298,15 +314,15 @@ small {
   -moz-animation: fade-in 300ms 150ms 1 normal forwards;
   -webkit-animation: fade-in 300ms 150ms 1 normal forwards;
   animation: fade-in 300ms 150ms 1 normal forwards;
-  opacity: 0;
   margin-top: 0.66rem;
+  opacity: 0;
 }
 
 .main-header__bottom {
-  padding: 1.33rem 0;
+  align-items: flex-end;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  padding: 1.33rem 0;
   position: relative;
 }
 
@@ -316,15 +332,15 @@ small {
   -webkit-animation: moving-button 10000ms 0s infinite normal forwards;
   animation: moving-button 10000ms 0s infinite normal forwards;
   background-color: hsl(202deg, 60%, 27%);
-  padding: 1rem;
   border: 0.21rem solid hsl(0deg, 0%, 100%);
-  user-select: none;
+  cursor: pointer;
+  padding: 1rem;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -1.58rem);
   transition: background-color 300ms;
-  cursor: pointer;
+  user-select: none;
 }
 
 .go-down-button:hover {
@@ -337,9 +353,9 @@ small {
 }
 
 .main-nav {
+  align-items: flex-end;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   padding: 1.33rem 0;
 }
 
@@ -357,10 +373,10 @@ small {
 }
 
 .main-nav__list a {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .main-nav__list p {
@@ -373,8 +389,8 @@ small {
 .in-active-link--home > div,
 .in-active-link--projects > div,
 .in-active-link--about > div {
-  width: 1.33rem;
   height: 1.33rem;
+  width: 1.33rem;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -435,8 +451,8 @@ small {
 }
 
 .main-nav-small__bar {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: flex-start;
   padding: 1.33rem 0;
   transition: all 400ms;
@@ -447,14 +463,16 @@ small {
 }
 
 .main-nav-small__bar__button {
-  width: 50px;
-  height: 50px;
   background-color: transparent;
-  border: 1px solid hsla(0deg, 0%, 100%, 0.5);
+  border-color: hsla(0deg, 0%, 100%, 0.5);
   border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
   box-shadow: 0 0 3px 1px hsl(0deg, 0%, 100%);
   margin-right: 1.33rem;
   overflow: hidden;
+  height: 50px;
+  width: 50px;
 }
 
 .main-nav-small__bar__button:hover {
@@ -462,14 +480,14 @@ small {
 }
 
 .main-nav-small__bar__button__icons-wrapper {
-  transition: translate 400ms;
-  display: flex;
   align-items: center;
+  display: flex;
+  transition: translate 400ms;
 }
 
 .main-nav-small__bar__button__icons-wrapper > img {
-  width: 20px;
   height: 20px;
+  width: 20px;
   margin: 15px;
 }
 
@@ -483,16 +501,16 @@ small {
 }
 
 .main-nav-small__links {
-  position: absolute;
-  z-index: 99;
-  width: 100%;
-  bottom: 0;
-  translate: 100%;
-  transition: translate 400ms;
   background-color: hsl(213deg, 100%, 12%);
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: center;
   padding: 4rem 1.33rem;
+  width: 100%;
+  translate: 100%;
+  transition: translate 400ms;
+  z-index: 99;
 }
 
 .main-nav-small__links__list {
@@ -505,17 +523,17 @@ small {
 }
 
 .main-nav-small__links__list > li > a {
+  align-items: center;
   display: flex;
   font-size: clamp(24px, 6vw, 32px);
-  text-transform: uppercase;
-  text-decoration: none;
-  align-items: center;
   font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .main-nav-small__links__list > li > a > div {
-  width: 42px;
   height: 42px;
+  width: 42px;
   margin-right: 2rem;
 }
 
@@ -524,9 +542,9 @@ small {
 }
 
 .main-content__wrapper {
-  width: 100%;
-  margin: 0 auto;
   background-color: hsl(213deg, 100%, 12%);
+  margin: 0 auto;
+  width: 100%;
 }
 
 .footer {
@@ -534,16 +552,16 @@ small {
 }
 
 .footer__links {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
 .footer__links > a {
-  text-decoration: none;
   margin-bottom: 1.33rem;
   margin-right: 1.33rem;
+  text-decoration: none;
 }
 
 .footer__links__external-links {
@@ -551,10 +569,10 @@ small {
 }
 
 .footer__links__external-links > div {
-  display: flex;
   align-items: center;
-  margin-right: 1.33rem;
+  display: flex;
   margin-bottom: 1.33rem;
+  margin-right: 1.33rem;
 }
 
 .footer__links__external-links > div > img {
@@ -563,18 +581,18 @@ small {
 }
 
 .default-container-width {
-  width: clamp(300px, 90vw, 1150px);
   margin: 0 auto;
+  width: clamp(300px, 90vw, 1150px);
 }
 
 .bg-wrapper--dark {
-  width: 100%;
   background-color: hsl(213deg, 100%, 12%);
+  width: 100%;
 }
 
 .bg-wrapper--light {
-  width: 100%;
   background-color: hsl(202deg, 60%, 27%);
+  width: 100%;
 }
 
 .home .main-header__wrapper,
@@ -590,7 +608,7 @@ small {
   border: 4px solid hsla(0deg, 0%, 100%, 0.5);
   margin-bottom: 1.33rem;
   padding: 2rem 5.33rem 2rem 4rem;
-  transition: background-color 300ms;
+  transition: background-color 400ms;
 }
 @media only screen and (max-width: 768px) {
   .my-experience__content {
@@ -659,11 +677,10 @@ small {
 
 .highlight-projects__content {
   border: 4px solid hsla(0deg, 0%, 100%, 0.5);
+  box-shadow: none;
   margin-bottom: 2.66rem;
   padding: 2rem 4rem;
-  transition: background-color 300ms;
-  box-shadow: none;
-  transition: box-shadow 400ms;
+  transition: all 400ms;
 }
 @media only screen and (max-width: 768px) {
   .highlight-projects__content {
@@ -678,7 +695,7 @@ small {
 
 .highlight-projects__box-shadow:nth-last-of-type(3n - 1) {
   box-shadow: 0.66rem 0.66rem hsl(201deg, 100%, 75%);
-  transition: box-shadow 400ms;
+  transition: all 400ms;
 }
 @media only screen and (max-width: 768px) {
   .highlight-projects__box-shadow:nth-last-of-type(3n - 1) {
@@ -688,7 +705,7 @@ small {
 
 .highlight-projects__box-shadow:nth-last-of-type(3n + 1) {
   box-shadow: 0.66rem 0.66rem hsl(339deg, 100%, 75%);
-  transition: box-shadow 400ms;
+  transition: all 400ms;
 }
 @media only screen and (max-width: 768px) {
   .highlight-projects__box-shadow:nth-last-of-type(3n + 1) {
@@ -698,7 +715,7 @@ small {
 
 .highlight-projects__box-shadow:nth-last-of-type(3n) {
   box-shadow: 0.66rem 0.66rem hsl(68deg, 100%, 75%);
-  transition: box-shadow 400ms;
+  transition: all 400ms;
 }
 @media only screen and (max-width: 768px) {
   .highlight-projects__box-shadow:nth-last-of-type(3n) {
@@ -740,8 +757,8 @@ small {
 }
 
 .highlight-projects__screen-shot > img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -751,8 +768,8 @@ small {
 }
 
 .highlight-projects__links > div {
-  display: flex;
   align-items: center;
+  display: flex;
   margin-right: 1.33rem;
   margin-top: 1rem;
 }

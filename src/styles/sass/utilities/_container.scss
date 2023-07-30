@@ -1,16 +1,16 @@
 @use '../abstract/colors';
 
 .default-container-width {
-  width: clamp(300px, 90vw, 1150px);
   margin: 0 auto;
+  width: clamp(300px, 90vw, 1150px);
 }
 
 .bg-wrapper--dark {
-  width: 100%;
   background-color: colors.$main-theme-color-dark;
+  width: 100%;
 }
 
 .bg-wrapper--light {
-  width: 100%;
   background-color: colors.$main-theme-color-light;
+  width: 100%;
 }

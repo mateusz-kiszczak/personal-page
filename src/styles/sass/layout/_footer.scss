@@ -5,16 +5,19 @@
 }
 
 .footer__links {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
 .footer__links > a {
+  margin: {
+    bottom: 1.33rem;
+    right: 1.33rem;
+  }
+
   text-decoration: none;
-  margin-bottom: 1.33rem;
-  margin-right: 1.33rem;
 }
 
 .footer__links__external-links {
@@ -22,10 +25,13 @@
 }
 
 .footer__links__external-links > div {
-  display: flex;
   align-items: center;
-  margin-right: 1.33rem;
-  margin-bottom: 1.33rem;
+  display: flex;
+  
+  margin: {
+    bottom: 1.33rem;
+    right: 1.33rem;
+  }
 }
 
 .footer__links__external-links > div > img {

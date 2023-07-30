@@ -4,66 +4,78 @@
 
 
 .main-header__wrapper {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  
   background: {
     repeat: no-repeat;
     size: cover;
   };
+
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 
 .main-header {
   @include mixins.default-animation(fade-out-main-bg, 600ms, 150ms);
+
   background-color: colors.$main-theme-color-dark;
 }
 
 .main-header__container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  height: 100vh;
 }
 
 .main-header__middle__heading {
   border: 0.42rem solid colors.$main-white-color;
-  padding: 1.75rem 2rem;
   box-shadow: inset 0 0 0 1000px colors.$main-theme-color-light-transparent;
   overflow: hidden;
+  padding: 1.75rem 2rem;
 }
 
 .main-header__middle__heading > h1 {
   @include mixins.default-animation(fade-in-from-left, 300ms, 150ms);
+
   opacity: 0;
 }
 
 .code-string {
   @include mixins.default-animation(fade-in, 300ms, 150ms);
-  opacity: 0;
+
   margin-top: 0.66rem;
+  opacity: 0;
 }
 
 .main-header__bottom {
-  padding: 1.33rem 0;
+  align-items: flex-end;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+
+  padding: 1.33rem 0;
+
   position: relative;
 }
 
 .go-down-button {
   @include mixins.default-animation(moving-button, 10000ms, 0s, infinite);
+
   background-color: colors.$main-theme-color-light;
-  padding: 1rem;
   border: 0.21rem solid colors.$main-white-color;
-  user-select: none;
+
+  cursor: pointer;
+  
+  padding: 1rem;
+
   position: absolute;
   bottom: 0;
   left: 50%;
+
   transform: translate(-50%, -1.58rem);
   transition: background-color 300ms;
-  cursor: pointer;
+  
+  user-select: none;
 }
 
 .go-down-button:hover {
