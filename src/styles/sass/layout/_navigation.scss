@@ -33,8 +33,9 @@
 }
 
 
-// Active and inactive links
+// ACTIVE AND INACTIVE LINKS.
 
+// Active.
 .active-link--home > div,
 .active-link--projects > div,
 .active-link--about > div,
@@ -84,7 +85,7 @@
   color: colors.$yellow-text;
 }
 
-
+// Inactive.
 .in-active-link--home > p,
 .in-active-link--projects > p,
 .in-active-link--about > p {
@@ -108,7 +109,6 @@
 // NAVIGATION SMALL DEVICES
 
 // Navigation Bar
-
 .main-nav-small__bar {
   display: flex;
   align-items: center;
@@ -157,9 +157,7 @@
   box-shadow: 0 -25px 0 25px colors.$main-theme-color-light-transparent;
 }
 
-
 // Navigation Links
-
 .main-nav-small__links {
   position: absolute;
   z-index: 99;

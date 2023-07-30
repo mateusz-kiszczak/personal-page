@@ -5,6 +5,7 @@ import screenWidthReducer from "../features/screenDimentions/screenWidth";
 import screenHeightReducer from "../features/screenDimentions/screenHeight";
 import isNavigationOpenReducer from "../features/smallDevicesNavigation/isNavigationOpen";
 import smallNavBarHeightReducer from "../features/smallDevicesNavigation/smallNavBarHeight";
+import appScrollTopPositionReducer from "../features/appScrollTopPosition/appScrollTopPosition";
 
 export const store = configureStore({
   reducer: {
@@ -13,6 +14,7 @@ export const store = configureStore({
     screenWidth: screenWidthReducer,
     screenHeight: screenHeightReducer,
     isNavigationOpen: isNavigationOpenReducer,
-    smallNavBarHeight: smallNavBarHeightReducer
+    smallNavBarHeight: smallNavBarHeightReducer,
+    appScrollTopPosition: appScrollTopPositionReducer
   },
 });

@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
+
 const NavigationSmallLinks = () => {
   const smallNavBarHeight = useSelector((state) => state.smallNavBarHeight.value);
   const screenHeight = useSelector((state) => state.screenHeight.value);
@@ -31,5 +32,6 @@ const NavigationSmallLinks = () => {
     </nav>
   );
 };
+
 
 export default NavigationSmallLinks

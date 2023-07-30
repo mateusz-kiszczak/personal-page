@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
           <div>
             <img src={linkedinIcon} alt="GitHub icon." />
-            <a href="www.linkedin.com/in/mateusz-kiszczak-567850183" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/mateusz-kiszczak-567850183/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -29,5 +29,6 @@ const Footer = () => {
     </footer>
   );
 }
+
 
 export default Footer;

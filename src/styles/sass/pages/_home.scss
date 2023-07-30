@@ -94,6 +94,8 @@
   margin-bottom: 2.66rem;
   padding: 2rem 4rem;
   transition: background-color 300ms;
+  box-shadow: none;
+  transition: box-shadow 400ms;
 
   @media only screen and (max-width: 768px) {
     padding: 2rem 3rem;
@@ -104,24 +106,27 @@
   }
 }
 
-.highlight-projects__content:nth-last-of-type(3n - 1) {
+.highlight-projects__box-shadow:nth-last-of-type(3n - 1) {
   box-shadow: variables.$box-shadow-blue;
+  transition: box-shadow 400ms;
 
     @media only screen and (max-width: 768px) {
       box-shadow: variables.$box-shadow-blue--sm;
     }
   }
 
-.highlight-projects__content:nth-last-of-type(3n + 1) {
+.highlight-projects__box-shadow:nth-last-of-type(3n + 1) {
   box-shadow: variables.$box-shadow-pink;
+  transition: box-shadow 400ms;
 
   @media only screen and (max-width: 768px) {
     box-shadow: variables.$box-shadow-pink--sm;
   }
 }
 
-.highlight-projects__content:nth-last-of-type(3n) {
+.highlight-projects__box-shadow:nth-last-of-type(3n) {
   box-shadow: variables.$box-shadow-yellow;
+  transition: box-shadow 400ms;
 
   @media only screen and (max-width: 768px) {
     box-shadow: variables.$box-shadow-yellow--sm;
@@ -134,7 +139,7 @@
 
 .highlight-projects__content:hover {
   background-color: colors.$main-theme-color-dark;
-  transition: background-color 150ms;
+  transition: all 150ms;
 }
 
 .highlight-projects__content > h3 {

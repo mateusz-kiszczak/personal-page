@@ -9,12 +9,14 @@ import openNavIcon from "../../img/icons/navigation/menu_open.svg";
 import closeNavIcon from "../../img/icons/navigation/menu_close.svg";
 
 
+
 const NavigationSmallBar = () => {
-  const ref = useRef(null);
   const dispatch = useDispatch();
   const isNavigationOpen = useSelector((state) => state.isNavigationOpen.value);
+  
 
-  // Handle open/close navigation.
+  // HANDLE OPEN/CLOSE NAVIGATION.
+
   const handleOnNavButtonClick = () => {
     if (isNavigationOpen) {
       dispatch(openCloseNavigation(false));
@@ -22,8 +24,12 @@ const NavigationSmallBar = () => {
       dispatch(openCloseNavigation(true));
     }
   };
+  
 
-  // Get device screen dimentions.
+  // GET DEVICE SCREEN DIMANTIONS.
+
+  const ref = useRef(null);
+
   const screenWidth = useSelector((state) => state.screenWidth.value);
   const screenHeight = useSelector((state) => state.screenHeight.value);
 
@@ -37,6 +43,15 @@ const NavigationSmallBar = () => {
     dispatch(updateSmallNavBarHeight(ref.current.clientHeight));
     // eslint-disable-next-line
   }, [screenWidth, screenHeight]);
+
+
+  // PREVENT FROM SCROLLING WHEN NAVIGATION IS OPEN (SMALL DEVICES).
+  
+  useEffect(() => {
+    if (isNavigationOpen) document.body.style.overflowY = 'hidden';
+    if (!isNavigationOpen) document.body.style.overflowY = 'visible';
+  }, [isNavigationOpen]);
+
 
   return (
     <section ref={ref} className={`main-nav-small__bar ${isNavigationOpen ? "navigation-opened--bar-bg" : ""}`}>
@@ -59,5 +74,7 @@ const NavigationSmallBar = () => {
     </section>
   );
 };
+
+
 
 export default NavigationSmallBar

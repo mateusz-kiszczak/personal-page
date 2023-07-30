@@ -2,7 +2,7 @@
 @use '../abstract/colors';
 
 
-// Fonts
+// FONTS.
 
 @font-face {
   font-family: "Lato";
@@ -54,7 +54,7 @@
 }
 
 
-// Default font styles
+// DEFAULT FONT STYLES.
 
 * {
   font-family: variables.$main-sans-serif;
@@ -65,7 +65,8 @@ html {
   font-size: clamp(16px, 2vw, 24px);
 }
 
-// Text elements
+
+// TEXT ELEMENTS.
 
 h1 {
   font-size: 4rem;
@@ -100,7 +101,8 @@ small {
   font-family: variables.$main-monospace;
 }
 
-// Classes for color text
+
+// CLASSES FOR COLOR TEXT.
 
 .blue-text {
   color: colors.$blue-text;

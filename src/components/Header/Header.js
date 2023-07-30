@@ -10,12 +10,16 @@ import GoDownButton from "../GoDownButton/GoDownButton";
 import leftFillNum from "../../utilities/leftFillNumber";
 
 
+
 const Header = (props) => {
-  // Set client (cursor) position.
+  // SET CLIENT (CURSOR) POSITION.
+
   const clientPositionX = useSelector((state) => state.positionX.value);
   const clientPositionY = useSelector((state) => state.positionY.value);
 
-  // Create a 'digital clock' that shows current time.
+
+  // CREATE A 'DIGITAL CLOCK' THAT SHOWS CURRENT TIME.
+
   const [time, setTime] = useState(`
     ${leftFillNum(new Date().getHours(), 2)} :
     ${leftFillNum(new Date().getMinutes(), 2)} :
@@ -34,7 +38,8 @@ const Header = (props) => {
   }, [time]);
 
 
-  // Get client device width.
+  // GET DEVICE WIDTH.
+  
   const screenWidth = useSelector((state) => state.screenWidth.value);
  
   
@@ -52,7 +57,7 @@ const Header = (props) => {
           </div>
           <div className="main-header__bottom">
             <p className="mono-string"><span>{clientPositionX}</span> | <span>{clientPositionY}</span></p>
-            <GoDownButton />
+            <GoDownButton handleScrollDown={props.handleScrollDown}/>
             <p className="mono-string">{time}</p>
           </div>
         </div>
@@ -60,5 +65,7 @@ const Header = (props) => {
     </div>
   );
 }
+
+
 
 export default Header;

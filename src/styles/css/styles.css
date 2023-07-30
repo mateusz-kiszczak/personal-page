@@ -662,6 +662,8 @@ small {
   margin-bottom: 2.66rem;
   padding: 2rem 4rem;
   transition: background-color 300ms;
+  box-shadow: none;
+  transition: box-shadow 400ms;
 }
 @media only screen and (max-width: 768px) {
   .highlight-projects__content {
@@ -674,29 +676,32 @@ small {
   }
 }
 
-.highlight-projects__content:nth-last-of-type(3n - 1) {
+.highlight-projects__box-shadow:nth-last-of-type(3n - 1) {
   box-shadow: 0.66rem 0.66rem hsl(201deg, 100%, 75%);
+  transition: box-shadow 400ms;
 }
 @media only screen and (max-width: 768px) {
-  .highlight-projects__content:nth-last-of-type(3n - 1) {
+  .highlight-projects__box-shadow:nth-last-of-type(3n - 1) {
     box-shadow: 0.5rem 0.5rem hsl(201deg, 100%, 75%);
   }
 }
 
-.highlight-projects__content:nth-last-of-type(3n + 1) {
+.highlight-projects__box-shadow:nth-last-of-type(3n + 1) {
   box-shadow: 0.66rem 0.66rem hsl(339deg, 100%, 75%);
+  transition: box-shadow 400ms;
 }
 @media only screen and (max-width: 768px) {
-  .highlight-projects__content:nth-last-of-type(3n + 1) {
+  .highlight-projects__box-shadow:nth-last-of-type(3n + 1) {
     box-shadow: 0.5rem 0.5rem hsl(339deg, 100%, 75%);
   }
 }
 
-.highlight-projects__content:nth-last-of-type(3n) {
+.highlight-projects__box-shadow:nth-last-of-type(3n) {
   box-shadow: 0.66rem 0.66rem hsl(68deg, 100%, 75%);
+  transition: box-shadow 400ms;
 }
 @media only screen and (max-width: 768px) {
-  .highlight-projects__content:nth-last-of-type(3n) {
+  .highlight-projects__box-shadow:nth-last-of-type(3n) {
     box-shadow: 0.5rem 0.5rem hsl(68deg, 100%, 75%);
   }
 }
@@ -707,7 +712,7 @@ small {
 
 .highlight-projects__content:hover {
   background-color: hsl(213deg, 100%, 12%);
-  transition: background-color 150ms;
+  transition: all 150ms;
 }
 
 .highlight-projects__content > h3 {
