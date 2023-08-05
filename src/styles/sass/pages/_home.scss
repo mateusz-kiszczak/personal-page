@@ -111,7 +111,7 @@
   }
 }
 
-.highlight-projects__box-shadow:nth-last-of-type(3n - 1) {
+.highlight-projects__box-shadow:nth-of-type(3n) {
   box-shadow: variables.$box-shadow-blue;
   transition: all 400ms;
 
@@ -120,7 +120,7 @@
     }
   }
 
-.highlight-projects__box-shadow:nth-last-of-type(3n + 1) {
+.highlight-projects__box-shadow:nth-of-type(3n + 1) {
   box-shadow: variables.$box-shadow-pink;
   transition: all 400ms;
 
@@ -129,7 +129,7 @@
   }
 }
 
-.highlight-projects__box-shadow:nth-last-of-type(3n) {
+.highlight-projects__box-shadow:nth-of-type(3n - 1) {
   box-shadow: variables.$box-shadow-yellow;
   transition: all 400ms;
 

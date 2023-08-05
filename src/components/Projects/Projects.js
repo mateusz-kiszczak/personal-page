@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 import codeSamples from '../../utilities/codeSamples';
+import ListOfProjects from '../ListOfProjects/ListOfProjects';
 
 
 const Projects = () => {
@@ -23,9 +24,8 @@ const Projects = () => {
       />
       <div className="main-content__wrapper">
         <main ref={scrollRef} id="home__main-content">
-          
-          <div className='bg-wrapper--light'>
-            
+          <div className='bg-wrapper--gradient'>
+            <ListOfProjects />
           </div>
           <Footer />
         </main>

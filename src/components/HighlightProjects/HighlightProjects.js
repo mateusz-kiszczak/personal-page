@@ -2,11 +2,11 @@ import { useEffect, useRef, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import highlightProjects from "../../utilities/highlightProjects";
+import highlightProjects from "../../data/highlightProjects";
 import isElementOnTheScreen from "../../utilities/isElementOnTheScreen";
 
-import nelifyIcon from "./../../img/icons/technologies/netlify.svg";
-import gitHubIcon from "./../../img/icons/technologies/github.svg";
+import netlifyIcon from "./../../img/icons/technologies/netlify.svg";
+import githubIcon from "./../../img/icons/technologies/github.svg";
 
 
 
@@ -55,13 +55,13 @@ const HighlightProjects = () => {
             <div className="highlight-projects__links">
               {item.links.hasOwnProperty('github') &&
                 <div>
-                  <img src={gitHubIcon} alt="GitHub icon." />
+                  <img src={githubIcon} alt="GitHub icon." />
                   <a href={item.links.github} target="_blank" rel="noreferrer">GitHub Page</a>
                 </div>
               }
               {item.links.hasOwnProperty('netlify') &&
                 <div>
-                  <img src={nelifyIcon} alt="Netlify icon." />
+                  <img src={netlifyIcon} alt="Netlify icon." />
                   <a href={item.links.netlify} target="_blank" rel="noreferrer">Live Example</a>
                 </div>
               }

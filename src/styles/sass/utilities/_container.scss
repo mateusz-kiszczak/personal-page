@@ -14,3 +14,8 @@
   background-color: colors.$main-theme-color-light;
   width: 100%;
 }
+
+.bg-wrapper--gradient {
+  background-image: linear-gradient(to bottom, colors.$main-theme-color-dark-transparent, colors.$main-theme-color-light-transparent);
+  width: 100%;
+}

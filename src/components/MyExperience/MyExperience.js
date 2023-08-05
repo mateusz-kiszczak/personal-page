@@ -1,4 +1,4 @@
-import myExperience from "../../utilities/myExperience";
+import myExperience from "../../data/myExperience";
 
 
 const MyExperience = () => {
