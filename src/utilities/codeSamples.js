@@ -133,7 +133,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"html\"",
+    string: "\xa0\xa0\"html\"",
     colorClass: "yellow-text"
   },
   {
@@ -141,7 +141,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"css\"",
+    string: "\xa0\xa0\"css\"",
     colorClass: "yellow-text"
   },
   {
@@ -149,7 +149,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"sass\"",
+    string: "\xa0\xa0\"sass\"",
     colorClass: "yellow-text"
   },
   {
@@ -157,7 +157,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"php\"",
+    string: "\xa0\xa0\"php\"",
     colorClass: "yellow-text"
   },
   {
@@ -165,7 +165,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"javascript\"",
+    string: "\xa0\xa0\"javascript\"",
     colorClass: "yellow-text"
   },
   {
@@ -173,7 +173,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"react\"",
+    string: "\xa0\xa0\"react\"",
     colorClass: "yellow-text"
   },
   {
@@ -181,7 +181,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"react-router\"",
+    string: "\xa0\xa0\"react-router\"",
     colorClass: "yellow-text"
   },
   {
@@ -189,7 +189,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"redux\"",
+    string: "\xa0\xa0\"redux\"",
     colorClass: "yellow-text"
   },
   {
@@ -197,7 +197,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"git\"",
+    string: "\xa0\xa0\"git\"",
     colorClass: "yellow-text"
   },
   {
@@ -205,7 +205,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"github\"",
+    string: "\xa0\xa0\"github\"",
     colorClass: "yellow-text"
   },
   {
@@ -213,7 +213,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"jest\"",
+    string: "\xa0\xa0\"jest\"",
     colorClass: "yellow-text"
   },
   {
@@ -221,7 +221,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"vsc\"",
+    string: "\xa0\xa0\"vsc\"",
     colorClass: "yellow-text"
   },
   {
@@ -229,7 +229,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"figma\"",
+    string: "\xa0\xa0\"figma\"",
     colorClass: "yellow-text"
   },
   {
@@ -237,7 +237,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"photoshop\"",
+    string: "\xa0\xa0\"photoshop\"",
     colorClass: "yellow-text"
   },
   {
@@ -245,7 +245,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"illustrator\"",
+    string: "\xa0\xa0\"illustrator\"",
     colorClass: "yellow-text"
   },
   {
@@ -253,7 +253,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"gimp\"",
+    string: "\xa0\xa0\"gimp\"",
     colorClass: "yellow-text"
   },
   {
@@ -261,7 +261,7 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: "\t\"netlify\"\n",
+    string: "\xa0\xa0\"netlify\"\n",
     colorClass: "yellow-text"
   },
   {

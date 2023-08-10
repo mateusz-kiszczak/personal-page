@@ -1,6 +1,8 @@
 import { useRef } from 'react';
 
 import Header from '../Header/Header';
+import MyNameIs from '../MyNameIs/MyNameIs';
+import Technologies from '../Technologies/Techonologies';
 import Footer from '../Footer/Footer';
 
 import codeSamples from '../../utilities/codeSamples';
@@ -23,9 +25,9 @@ const AboutMe = () => {
       />
       <div className="main-content__wrapper">
         <main ref={scrollRef} id="home__main-content">
-          
+          <MyNameIs />
           <div className='bg-wrapper--light'>
-            
+            <Technologies />
           </div>
           <Footer />
         </main>
