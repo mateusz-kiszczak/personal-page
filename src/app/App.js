@@ -15,12 +15,6 @@ import { updateWidth } from "../features/screenDimentions/screenWidth";
 import { updateHeight } from "../features/screenDimentions/screenHeight";
 import { updateTopPosition } from "../features/appScrollTopPosition/appScrollTopPosition";
 
-import countapi from 'countapi-js';
-
-countapi.visits('global').then((result) => {
-  console.log(`This website was opened ${result.value} times`);
-});
-
 
 
 const App = () => {
