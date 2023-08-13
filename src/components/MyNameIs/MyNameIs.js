@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import codeSamples from "../../utilities/codeSamples";
 import CodeString from "../CodeString/CodeString";
 
-import avatar from "./../../img/other/avatar.svg";
+import avatar from "./../../img/other/mat_web_blue.jpg";
 
 
 const MyNameIs = () => {
