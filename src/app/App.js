@@ -5,6 +5,7 @@ import { useDispatch} from "react-redux";
 import Home from "../components/Home/Home";
 import Projects from "../components/Projects/Projects";
 import AboutMe from "../components/AboutMe/AboutMe";
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 import leftFillNum from "../utilities/leftFillNumber";
 
@@ -81,6 +82,7 @@ const App = () => {
       ref={appRef} 
       onMouseMove={(e) => handleOnMouseMove(e)}
     >
+      <BackToTopButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

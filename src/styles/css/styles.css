@@ -266,6 +266,60 @@ small {
     transform: translate(-50%, -1.58rem);
   }
 }
+.back-to-top {
+  background-color: hsl(213deg, 100%, 12%);
+  border-color: hsla(0deg, 0%, 100%, 0.5);
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 0 3px 1px hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  opacity: 1;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  transition: all 400ms;
+  user-select: none;
+  z-index: 99;
+}
+@media only screen and (min-width: 1200px) {
+  .back-to-top {
+    height: 75px;
+    width: 75px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .back-to-top {
+    right: 5vw;
+    bottom: 5vw;
+  }
+}
+
+.back-to-top:hover {
+  background-color: hsl(202deg, 60%, 27%);
+}
+
+.back-to-top > img {
+  height: 20px;
+  width: 20px;
+  transition: all 400ms;
+}
+@media only screen and (min-width: 1200px) {
+  .back-to-top > img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.button-unvisible {
+  opacity: 0;
+}
+
 .app {
   overflow-x: hidden;
   width: 100%;

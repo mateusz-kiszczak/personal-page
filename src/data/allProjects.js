@@ -281,7 +281,8 @@ const highlightProjects = [
     tags: ["HTML", "CSS", "Sass", "JavaScript", "ReactJS", "React-Redux", "React-Router", "Figma", "Photoshop"],
     img: matPersonalPageScreen,
     links: {
-      figma: "https://www.figma.com/file/8E5KOxhqEnmHk65p2op881/Mat-Personal-Page?type=design&node-id=4%3A15&mode=design&t=8AAFoD7kzo8FxHye-1"
+      figma: "https://www.figma.com/file/8E5KOxhqEnmHk65p2op881/Mat-Personal-Page?type=design&node-id=4%3A15&mode=design&t=8AAFoD7kzo8FxHye-1",
+      github: "https://github.com/mateusz-kiszczak/personal-page"
     }
   },
   {
