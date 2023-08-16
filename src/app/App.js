@@ -76,13 +76,19 @@ const App = () => {
   }, [pathname]);
 
 
+  // HANDLE SCROLL UP.
+
+  const handleScrollUp = () => {
+    appRef.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  };
+
   return (
     <div 
       className="app" 
       ref={appRef} 
       onMouseMove={(e) => handleOnMouseMove(e)}
     >
-      <BackToTopButton />
+      <BackToTopButton handleScrollUp={handleScrollUp}/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

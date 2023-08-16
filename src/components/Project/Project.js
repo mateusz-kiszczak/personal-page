@@ -43,6 +43,7 @@ const Project = (props) => {
       <div 
         ref={projectTop} 
         className={`${projectOpen ? "project--open--top" : ""} project__top`}
+        onClick={() => handleOnButtonClick()}
       >
         <div className="project-header-tags-wrapper">
           <h3 className={`my-experience__top__underline--${props.item.color}`}>{`${props.index + 1}. ${props.item.title}`}</h3>
@@ -57,7 +58,7 @@ const Project = (props) => {
             })}
           </p>
         </div>
-        <div className="project-buttons-wrapper"  onClick={() => handleOnButtonClick()}>
+        <div className="project-buttons-wrapper">
           <button className={`project__top__open-button ${projectOpen ? "project-button-hidden" : "project-button-visible"}`}>
             <img src={arrowIcon} alt="Show details" />
           </button>
