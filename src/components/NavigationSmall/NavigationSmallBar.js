@@ -47,9 +47,27 @@ const NavigationSmallBar = () => {
 
   // PREVENT FROM SCROLLING WHEN NAVIGATION IS OPEN (SMALL DEVICES).
   
+  // Function for mobile devices.
+  const disableTouchScroll = e => {
+    e.preventDefault();
+    e.stopPropagation();
+    return false; 
+  }
+
   useEffect(() => {
-    if (isNavigationOpen) document.body.style.overflowY = 'hidden';
-    if (!isNavigationOpen) document.body.style.overflowY = 'visible';
+    if (isNavigationOpen) {
+      document.body.style.overflow = 'hidden';
+
+      window.addEventListener("touchmove", disableTouchScroll);
+    
+      return () => window.removeEventListener("touchmove", disableTouchScroll);
+    }
+    if (!isNavigationOpen) {
+      document.body.style.overflow = 'visible';
+      
+      return () => window.removeEventListener("touchmove", disableTouchScroll);
+    }
+
   }, [isNavigationOpen]);
 
 

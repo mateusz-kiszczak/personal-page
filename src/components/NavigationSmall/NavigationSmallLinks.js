@@ -4,11 +4,10 @@ import { NavLink } from "react-router-dom";
 
 const NavigationSmallLinks = () => {
   const smallNavBarHeight = useSelector((state) => state.smallNavBarHeight.value);
-  const screenHeight = useSelector((state) => state.screenHeight.value);
   const isNavigationOpen = useSelector((state) => state.isNavigationOpen.value);
 
   return (
-    <nav className={`main-nav-small__links ${isNavigationOpen ? "navigation-opened--links" : ""}`} style={{height: (screenHeight - smallNavBarHeight)}}>
+    <nav className={`main-nav-small__links ${isNavigationOpen ? "navigation-opened--links" : ""}`} style={{top: smallNavBarHeight}}>
       <ul className="main-nav-small__links__list">
         <li>
           <NavLink to="/" className={({isActive}) => (isActive ? "active-link--home" : "in-active-link--home")}>

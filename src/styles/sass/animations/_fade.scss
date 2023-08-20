@@ -18,12 +18,12 @@
 
 @-webkit-keyframes fade-out-main-bg {
   from  { background-color: colors.$main-theme-color-dark; }
-  to    { background-color: hsla(0, 0, 0, 0) }
+  to    { background-color: hsla(0, 0%, 0%, 0) }
 }
 
 @keyframes fade-out-main-bg {
   from  { background-color: colors.$main-theme-color-dark; }
-  to    { background-color: hsla(0, 0, 0, 0) }
+  to    { background-color: hsl(0, 0%, 0%, 0) }
 }
 
 
