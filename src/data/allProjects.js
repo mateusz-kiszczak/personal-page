@@ -23,6 +23,7 @@ import rockPaperScissorsScreen from "./../img/projects/rock_paper_scissors.jpg";
 import ticTacToeScreen from "./../img/projects/tic_tac_toe.jpg";
 import matPersonalPageScreen from "./../img/projects/mat_personal_page.jpg"
 import nemoCoffeeBeansWireframeScreen from "./../img/projects/nemo_coffee_beans_wireframe.jpg";
+import alexLaptopsScreen from "./../img/projects/alex_laptops.jpg";
 
 
 const highlightProjects = [
@@ -293,6 +294,16 @@ const highlightProjects = [
     img: nemoCoffeeBeansWireframeScreen,
     links: {
       figma: "https://www.figma.com/file/9ZL0XbTGqckxwVaWy1zaAn/Nemo-Coffee-Beans?type=design&mode=design&t=17Ylh4xIQKijx8Nv-1"
+    }
+  },
+  {
+    title: "Alex Laptops Webside Design 💻",
+    emoji: "💻",
+    date: "2023-09-22",
+    tags: ["Figma", "Photoshop", "UI/UX"],
+    img: alexLaptopsScreen,
+    links: {
+      figma: "https://www.figma.com/file/pd324dHrYtT9xaiC0nOp8p/Alex-Laptops---v-2.0?type=design&node-id=2%3A489&mode=design&t=NkxRRnGaNE5Yj5ql-1"
     }
   },
 ];
