@@ -24,6 +24,7 @@ import ticTacToeScreen from "./../img/projects/tic_tac_toe.jpg";
 import matPersonalPageScreen from "./../img/projects/mat_personal_page.jpg"
 import nemoCoffeeBeansWireframeScreen from "./../img/projects/nemo_coffee_beans_wireframe.jpg";
 import alexLaptopsScreen from "./../img/projects/alex_laptops.jpg";
+import shoutboxScreen from "./../img/projects/shoutbox.png";
 
 
 const highlightProjects = [
@@ -304,6 +305,17 @@ const highlightProjects = [
     img: alexLaptopsScreen,
     links: {
       figma: "https://www.figma.com/file/pd324dHrYtT9xaiC0nOp8p/Alex-Laptops---v-2.0?type=design&node-id=2%3A489&mode=design&t=NkxRRnGaNE5Yj5ql-1"
+    }
+  },
+  {
+    title: "Shoutbox 😮",
+    emoji: "😮",
+    date: "2023-11-04",
+    tags: ["Figma", "HTML", "CSS", "PHP", "MySQL"],
+    img: shoutboxScreen,
+    links: {
+      figma: "https://www.figma.com/file/8Hviecl75N3tYx8OAcfle5/Shoutbox?type=design&node-id=1%3A3&mode=design&t=REJdE6uTjldEQ3Wa-1",
+      github: "https://github.com/mateusz-kiszczak/shoutbox"
     }
   },
 ];
