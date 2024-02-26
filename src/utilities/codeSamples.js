@@ -165,7 +165,23 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
+    string: "\xa0\xa0\"mysql\"",
+    colorClass: "yellow-text"
+  },
+  {
+    string: ",\n",
+    colorClass: "white-text"
+  },
+  {
     string: "\xa0\xa0\"javascript\"",
+    colorClass: "yellow-text"
+  },
+  {
+    string: ",\n",
+    colorClass: "white-text"
+  },
+  {
+    string: "\xa0\xa0\"wordpress\"",
     colorClass: "yellow-text"
   },
   {
@@ -187,6 +203,22 @@ const technicalSkills = [
   {
     string: ",\n",
     colorClass: "white-text"
+  },
+  {
+    string: ",\n",
+    colorClass: "white-text"
+  },
+  {
+    string: "\xa0\xa0\"jquery\"",
+    colorClass: "yellow-text"
+  },
+  {
+    string: ",\n",
+    colorClass: "white-text"
+  },
+  {
+    string: "\xa0\xa0\"ajax\"",
+    colorClass: "yellow-text"
   },
   {
     string: "\xa0\xa0\"redux\"",
