@@ -25,6 +25,7 @@ import matPersonalPageScreen from "./../img/projects/mat_personal_page.jpg"
 import nemoCoffeeBeansWireframeScreen from "./../img/projects/nemo_coffee_beans_wireframe.jpg";
 import alexLaptopsScreen from "./../img/projects/alex_laptops.jpg";
 import shoutboxScreen from "./../img/projects/shoutbox.png";
+import personalPageWordPressScreen from "./../img/projects/personal_page_wordpress.jpg";
 
 
 const highlightProjects = [
@@ -316,6 +317,17 @@ const highlightProjects = [
     links: {
       figma: "https://www.figma.com/file/8Hviecl75N3tYx8OAcfle5/Shoutbox?type=design&node-id=1%3A3&mode=design&t=REJdE6uTjldEQ3Wa-1",
       github: "https://github.com/mateusz-kiszczak/shoutbox"
+    }
+  },
+  {
+    title: "Personal Page - WordPress 👨‍💻",
+    emoji: "👨‍💻",
+    date: "2024-02-25",
+    tags: ["Figma", "WordPress", "Elementor", "JavaScript", "CSS"],
+    img: personalPageWordPressScreen,
+    links: {
+      figma: "https://www.figma.com/file/ytl3y9zgPHyNNUh2nVKa6B/Portfolio-WordPress?type=design&node-id=2%3A4&mode=design&t=WVg0sTZHWUkJhvuq-1",
+      live: "https://www.matpersonalpage-wp.com"
     }
   },
 ];

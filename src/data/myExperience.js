@@ -14,14 +14,14 @@ const myExperience = [
   {
     title: "Back-end Developer",
     tags: ["PHP", "MySQL"],
-    description: "Currently, I work on the backend development using PHP and MySQL. At this very moment, I am working on my PHP skills with expansion to MySQL in the very short future. Please check my most recent projects to find out more.",
+    description: "As for the backend technologies, I use PHP for web development. I work with MySQL to manage the database. I have improved my skills as a Full-stack developer, taking care of projects from design to entire competition and maintenance.",
     icon: backEndIcon,
     color: 'yellow'
   },
   {
     title: "Software Skills",
     tags: ["Figma", "Photoshop", "Illustrator", "Gimp"],
-    description: "During my journey with web development, I learned graphic design tools like Adobe Photoshop, Illustrator and Figma. I have basic, however solid, skills in both raster and vector graphics tools.",
+    description: "During my journey with web development, I learned graphic design tools like Adobe Photoshop, Illustrator and Figma. I have basic, however solid, skills in both raster and vector graphics tools. I am proficient in creating project designs and wireframes.",
     icon: softwareIcon,
     color: 'blue'
   }

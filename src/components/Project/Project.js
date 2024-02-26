@@ -7,6 +7,7 @@ import figmaIcon from "./../../img/icons/technologies/figma.svg";
 import awsIcon from "./../../img/icons/technologies/aws.svg";
 import arrowIcon from "./../../img/icons/projects/arrow.svg";
 import closeIcon from "./../../img/icons/projects/close.svg";
+import webIcon from "./../../img/icons/other/web.svg";
 
 
 
@@ -95,6 +96,12 @@ const Project = (props) => {
             <div>
               <img src={figmaIcon} alt="Netlify icon." />
               <a href={props.item.links.figma} target="_blank" rel="noreferrer">Visual Project</a>
+            </div>
+          }
+          {props.item.links.hasOwnProperty('live') &&
+            <div>
+              <img src={webIcon} alt="Web icon." />
+              <a href={props.item.links.live} target="_blank" rel="noreferrer">Live Project</a>
             </div>
           }
         </div>
