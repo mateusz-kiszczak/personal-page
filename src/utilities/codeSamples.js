@@ -205,10 +205,6 @@ const technicalSkills = [
     colorClass: "white-text"
   },
   {
-    string: ",\n",
-    colorClass: "white-text"
-  },
-  {
     string: "\xa0\xa0\"jquery\"",
     colorClass: "yellow-text"
   },
@@ -219,6 +215,10 @@ const technicalSkills = [
   {
     string: "\xa0\xa0\"ajax\"",
     colorClass: "yellow-text"
+  },
+  {
+    string: ",\n",
+    colorClass: "white-text"
   },
   {
     string: "\xa0\xa0\"redux\"",
