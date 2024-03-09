@@ -26,6 +26,8 @@ import nemoCoffeeBeansWireframeScreen from "./../img/projects/nemo_coffee_beans_
 import alexLaptopsScreen from "./../img/projects/alex_laptops.jpg";
 import shoutboxScreen from "./../img/projects/shoutbox.png";
 import personalPageWordPressScreen from "./../img/projects/personal_page_wordpress.jpg";
+import phpQuizScreen from "./../img/projects/php_quiz.png";
+import phpBlogScreen from "./../img/projects/php_blog.png";
 
 
 const highlightProjects = [
@@ -328,6 +330,26 @@ const highlightProjects = [
     links: {
       figma: "https://www.figma.com/file/ytl3y9zgPHyNNUh2nVKa6B/Portfolio-WordPress?type=design&node-id=2%3A4&mode=design&t=WVg0sTZHWUkJhvuq-1",
       live: "https://www.matpersonalpage-wp.com"
+    }
+  },
+  {
+    title: "PHP Quiz ❓",
+    emoji: "❓",
+    date: "2024-03-01",
+    tags: ["PHP", "MySQL", "HTML", "CSS"],
+    img: phpQuizScreen,
+    links: {
+      github: "https://github.com/mateusz-kiszczak/quiz_app"
+    }
+  },
+  {
+    title: "PHP Blog 📰",
+    emoji: "📰",
+    date: "2024-03-08",
+    tags: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap"],
+    img: phpBlogScreen,
+    links: {
+      github: "https://github.com/mateusz-kiszczak/php_blog"
     }
   },
 ];
