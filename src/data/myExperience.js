@@ -20,7 +20,7 @@ const myExperience = [
   },
   {
     title: "Software Skills",
-    tags: ["Git", "Figma", "Photoshop", "Illustrator", "Gimp", "WordPress"];
+    tags: ["Git", "Figma", "Photoshop", "Illustrator", "Gimp", "WordPress"],
     description: "My development workflow is supported by a solid command of essential software and tools. I utilize Git for version control, ensuring collaborative and organized code management. For design, I'm experienced with Figma in translating UI/UX concepts into practical interfaces, and proficient with Photoshop and Illustrator for graphic assets. I also have practical experience with WordPress (Elementor) for content management and web building, alongside foundational exposure to AWS for cloud deployment.",
     icon: softwareIcon,
     color: 'blue'
