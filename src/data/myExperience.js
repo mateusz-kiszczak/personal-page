@@ -6,22 +6,22 @@ import softwareIcon from '../img/icons/experience/software.svg';
 const myExperience = [
   {
     title: "Front-end Developer",
-    tags: ["JavaScript", "ReactJS", "HTML", "CSS", "Sass", "React Router", "Redux"],
-    description: "I am experienced in creating both Websites and Web applications using frontend technologies. I create responsive, clean and good-looking content. When writing the code, I use the semantic markup language and always ensure my code is well-commented and readable.",
+    tags: ["JavaScript", "ReactJS", "HTML", "CSS", "Sass", "React Router", "Redux", "jQuery"],
+    description: "My front-end expertise centers on creating engaging and highly responsive user interfaces. I am proficient in React.js, leveraging its component-based architecture to build scalable and maintainable SPAs. My core toolkit includes JavaScript (ES6+) for interactive functionalities, HTML5 for semantic structuring, and CSS3 alongside Sass for advanced styling and responsive design. I also have experience with jQuery for streamlined DOM manipulation and adhere to strong UI/UX principles to ensure intuitive and accessible user experiences.",
     icon: frontEndIcon,
     color: 'pink'
   },
   {
     title: "Back-end Developer",
-    tags: ["PHP", "MySQL"],
-    description: "As for the backend technologies, I use PHP for web development. I work with MySQL to manage the database. I have improved my skills as a Full-stack developer, taking care of projects from design to entire competition and maintenance.",
+    tags: ["Python", "Django", "PHP", "MySQL", "RESTful APIs"],
+    description: "On the back-end, I focus on developing robust and efficient server-side logic and managing data. I am skilled in Python with Django, building powerful web applications and RESTful APIs. My knowledge extends to PHP, where I've implemented database interactions using PDO. For data management, I am proficient in SQL, with hands-on experience in MySQL, PostgreSQL, and SQLite, designing schemas and executing complex queries to support dynamic application features.",
     icon: backEndIcon,
     color: 'yellow'
   },
   {
     title: "Software Skills",
-    tags: ["Figma", "Photoshop", "Illustrator", "Gimp"],
-    description: "During my journey with web development, I learned graphic design tools like Adobe Photoshop, Illustrator and Figma. I have basic, however solid, skills in both raster and vector graphics tools. I am proficient in creating project designs and wireframes.",
+    tags: ["Git", "Figma", "Photoshop", "Illustrator", "Gimp", "WordPress"];
+    description: "My development workflow is supported by a solid command of essential software and tools. I utilize Git for version control, ensuring collaborative and organized code management. For design, I'm experienced with Figma in translating UI/UX concepts into practical interfaces, and proficient with Photoshop and Illustrator for graphic assets. I also have practical experience with WordPress (Elementor) for content management and web building, alongside foundational exposure to AWS for cloud deployment.",
     icon: softwareIcon,
     color: 'blue'
   }
